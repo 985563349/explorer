@@ -1,2 +1,2 @@
 import './style.css';
-import './examples/animations';
+import './examples/fullscreen-and-resize';
