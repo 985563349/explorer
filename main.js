@@ -1,2 +1,2 @@
 import './style.css';
-import './examples/buffer-geometry';
+import './examples/plane-cube-sphere';

@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 
-// Screen
-const screen = new THREE.Scene();
+// Scene
+const scene = new THREE.Scene();
 
 // Sizes
 const Sizes = {
@@ -14,7 +14,7 @@ const cube = new THREE.Mesh(
   new THREE.BoxGeometry(1, 1, 1),
   new THREE.MeshBasicMaterial({ color: 0xff0000 })
 );
-screen.add(cube);
+scene.add(cube);
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, Sizes.width / Sizes.height);
@@ -22,7 +22,7 @@ camera.position.x = 3;
 camera.position.y = 3;
 camera.position.z = 3;
 camera.lookAt(cube.position);
-screen.add(camera);
+scene.add(camera);
 
 // Renderer
 const canvas = document.querySelector('.webgl');
@@ -62,7 +62,7 @@ const clock = new THREE.Clock();
 
 function tick() {
   cube.rotation.y = clock.getElapsedTime();
-  renderer.render(screen, camera);
+  renderer.render(scene, camera);
   requestAnimationFrame(tick);
 }
 
