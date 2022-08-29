@@ -1,2 +1,2 @@
 import './style.css';
-import './examples/solar-system';
+import './examples/random-box';
