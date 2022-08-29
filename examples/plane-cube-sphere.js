@@ -6,7 +6,7 @@ import * as dat from 'dat.gui';
 
 /**
  * 添加阴影效果：
- * 1、添加光源，本示例中使用的是聚光灯，代码58 ~ 64行。通过将castShadow设置为three，阴影功能被启用。
+ * 1、添加光源，本示例中使用的是聚光灯，代码78 ~ 87行。通过将castShadow设置为three，阴影功能被启用。
  * 通过设置shadow.mapSize、shadow.camera.far和shadow.camera.near三个参数来控制阴影的精细程度。
  *
  * 2、物体材质需要使用反光材质，MeshBasicMaterial材质不会对光有任何反应，只会使用指定颜色来渲染物体。
@@ -22,7 +22,7 @@ import * as dat from 'dat.gui';
 /**
  * dat.GUI
  * 使用这个库可以很容易地创建出能够改变代码变量的界面组件，极大的方便了场景的调试。
- * 具体使用代码105 ~ 113行。
+ * 具体使用代码110 ~ 119行。
  */
 
 /**
@@ -87,8 +87,8 @@ scene.add(sphere);
 }
 
 // Axes
-const axes = new THREE.AxesHelper(20);
-scene.add(axes);
+// const axes = new THREE.AxesHelper(20);
+// scene.add(axes);
 
 // Canvas
 const canvas = document.querySelector('.webgl');

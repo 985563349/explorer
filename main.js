@@ -1,2 +1,2 @@
 import './style.css';
-import './examples/plane-cube-sphere';
+import './examples/solar-system';
